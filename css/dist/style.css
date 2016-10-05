@@ -1,4 +1,5 @@
 .jcarousel-hider {
+    margin: 20px;
     position: relative;
     overflow: hidden;
 }
@@ -48,4 +49,9 @@
 
 .jcarousel-arrow-right {
     right: 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
 }
