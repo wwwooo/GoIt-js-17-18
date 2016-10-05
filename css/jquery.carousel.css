@@ -1,0 +1,51 @@
+.jcarousel-hider {
+    position: relative;
+    overflow: hidden;
+}
+
+.jcarousel-list {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 50000px;
+    list-style: none;
+}
+
+.jcarousel-element {
+    display: block;
+    float: left;
+}
+
+.jcarousel-element p {
+    padding: 0;
+    text-align: center;
+}
+
+/**    Carousel Controls   **/
+
+.jcarousel-arrow-left,
+.jcarousel-arrow-right {
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    background: #4E443C;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 0 1px #000;
+    font: 24px/27px Arial, sans-serif;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.jcarousel-arrow-left {
+    left: 20px;
+}
+
+.jcarousel-arrow-right {
+    right: 20px;
+}
