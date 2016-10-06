@@ -2,27 +2,31 @@ module.exports = function(grunt) {
     grunt.initConfig({
         concat: {
             css: {
-                src: ['css/src/*.css'],
-                dest: 'css/dist/style.css'
+                files: {
+                    'css/dist/style.css': ['css/src/*.css']
+                }
             },
             js: {
-                src: ['js/src/*.js'],
-                dest: 'js/dist/main.js',
+                files: {
+                    'js/dist/main.js': ['js/src/*.js']
+                },
                 options: {
-                  separator: ';'
+                  separator: '\n;'
                 }
             }
         },
         uglify: {
             js: {
-                src: ['js/dist/main.js'],
-                dest: 'js/dist/main.min.js'
+                files: {
+                    'js/dist/main.min.js': ['js/dist/main.js']
+                }
             }
         },
         cssmin: {
             css: {
-                src: ['css/dist/style.css'],
-                dest: 'css/dist/style.min.css'
+                files: {
+                    'css/dist/style.min.css': ['css/dist/style.css']
+                }
             }
         }
     });
@@ -32,5 +36,4 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-cssmin');
 
     grunt.registerTask('default', ['concat', 'uglify', 'cssmin']);
-
 };

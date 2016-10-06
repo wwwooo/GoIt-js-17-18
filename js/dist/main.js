@@ -34,6 +34,7 @@
         return this;
     };
 })(jQuery);
+
 ;$(function() {
     $('.jcarousel').jcarousel({
         visible_img: 4,
