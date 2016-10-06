@@ -11,7 +11,7 @@ module.exports = function(grunt) {
                     'js/dist/main.js': ['js/src/*.js']
                 },
                 options: {
-                  separator: '\n;'
+                    separator: '\n;'
                 }
             }
         },
